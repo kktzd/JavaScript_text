@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>银行卡余额</title>
+		<script>
+			window.onload = function(){
+				var sum = parseFloat(prompt("输入您的银行卡金额："));
+				var power = parseFloat(prompt("输入您本月的电费："));
+				var water = parseFloat(prompt("输入您本月的水费："));
+				var inter = parseFloat(prompt("输入您本月的网费："));
+				var yer = sum - (power + water + inter);
+				
+				document.write("您的存款总额是：" + sum + "元" + "<br/>");
+				document.write("电费消费了：" + power + "元" + "<br/>");
+				document.write("水费消费了：" + water + "元" + "<br/>");
+				document.write("网费消费了：" + inter + "元" + "<br/>");
+				document.write("现在银行卡剩余：" + yer + "元");
+				
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
