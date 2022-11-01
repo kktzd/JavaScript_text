@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品打折</title>
+		<script>
+			var vip = prompt("请输入是否是会员：是(Yes) 否(No)")
+			var sum = parseFloat(prompt("请输入购物金额："));
+			if(vip == "Yes"){
+				if(sum >= 200){
+					document.write("该用户享受的折扣为0.75折" + "<br/>");
+					sum *= 0.75;
+					document.write("折后付款" + sum + "元");
+				}else if(sum >= 100){
+					document.write("该用户享受的折扣为0.8折" + "<br/>");
+					sum *= 0.8;
+					document.write("折后付款" + sum + "元");
+				}else{
+					document.write("消费太少");
+				}
+			}else if(vip == "No"){
+				if(sum >= 100){
+					document.write("该用户享受的折扣为0.9折" + "<br/>");
+					sum *= 0.9;
+					document.write("折后付款" + sum + "元");
+				}
+			}else{
+				document.write("不详");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
