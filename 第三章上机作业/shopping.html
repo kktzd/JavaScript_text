@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>会员购物</title>
+		<script>
+			var inregral = parseInt(prompt("请输入会员积分"));
+			document.write("该会员积分为：" + inregral + "<br/>");
+			if(inregral < 2000){
+				document.write("该会员享受的折扣为九折");
+			}else if(2000 <= inregral && inregral < 4000){
+				document.write("该会员享受的折扣为八折");
+			}else if(4000 <= inregral && inregral < 8000){
+				document.write("该会员享受的折扣为七折");
+			}else if(inregral >= 8000){
+				document.write("该会员享受的折扣为六折");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
