@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var i = 1;
+			var timu = prompt("这道题会做吗？会(yes) 不会(no)");
+			// if(timu == "yes"){
+			// 	document.write("放学了");
+			// }else{
+			// 	alert("老师再讲一遍");
+			// 	do{
+			// 		var timu2 = prompt("这道题会做吗？会(yes) 不会(no)");
+			// 		i++;
+			// 		if(timu2 == "yes"){
+			// 			break;
+			// 		}else{
+			// 			alert("老师再讲一遍");
+			// 		}
+			// 	}while(i <= 10);
+			// 	document.write("放学了");
+			// }
+			while(i<10){
+				if(timu=="yes"){
+					i=10;
+				}else{
+					alert("在讲一遍");
+					timu = prompt("这道题会做吗？会(yes) 不会(no)");
+					i++;
+				}
+			}
+			alert("放学了");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
