@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			//生成四位数
+			var sum = parseInt(prompt("请输入四位数字："));
+			document.write("输入的数："+sum+"<br/>");
+			
+			//1-9随机数
+			var sjs = parseInt(Math.random()*9+1);
+			document.write("随机数为:"+sjs+"<br/>");
+			
+			//获得四位数中的百位数
+			var baiwei = parseInt(sum/100)%10;
+			document.write("百位数为："+baiwei+"<br/>");
+			
+			//判断随机数是否与百位数相等
+			if(sjs==baiwei){
+				document.write("iphone14一台");
+			}else{
+				document.write("谢谢惠顾");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

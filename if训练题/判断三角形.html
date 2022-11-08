@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var a = parseFloat(prompt("请输入第一条边："));
+			var b = parseFloat(prompt("请输入第二条边："));
+			var c = parseFloat(prompt("请输入第三条边："));
+			var d;
+			
+			if(a>b){
+				d=a;
+				a=b;
+				b=d;
+			}
+			if(a>c){
+				d=a;
+				a=c;
+				c=d;
+			}
+			if(b>c){
+				d=b;
+				b=c;
+				c=d;
+			}
+			
+			if((a*a+b*b)==c*c){
+				alert("这是一个直角三角形");
+			}else if((a*a+b*b)>c*c){
+				alert("这是一个锐角三角形");
+			}else{
+				alert("这不是三角形");
+			}
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

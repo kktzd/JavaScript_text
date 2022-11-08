@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var a = parseInt(prompt("请输入数字："));	
+			var b = parseInt(prompt("请输入数字："));	
+			var c = parseInt(prompt("请输入数字："));	
+			
+			document.write("排序前："+"<br/>");
+			document.write("a："+a+"<br/>");
+			document.write("b："+b+"<br/>");
+			document.write("c："+c+"<br/>");
+			var d;
+			if(a>b){
+				d=a;
+				a=b;
+				b=d;
+			}
+			if(a>c){
+				d=a;
+				a=c;
+				c=d;
+			}
+			if(b>c){
+				d=b;
+				b=c;
+				c=d;
+			}
+			
+			document.write("排序后："+"<br/>");
+			document.write("a："+a+"<br/>");
+			document.write("b："+b+"<br/>");
+			document.write("c："+c+"<br/>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
