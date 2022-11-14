@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function averagen(n){
+				if(isNaN(n)){
+					alert("你输入的有问题");
+				}else{
+					var sum = 0;
+					for(var i = 1; i<=n; i++){
+						var a = parseInt(prompt("请输入第"+i+'门成绩的分数：'));
+						sum += a;
+					}
+					var aver = sum/n;
+					alert("第"+n+"门成绩的平均分数为："+parseFloat(aver));
+				}
+				
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" value="打印平均成绩" onclick="averagen(parseInt(prompt('请输入科目的数量：')))">
+	</body>
+</html>

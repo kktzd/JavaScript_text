@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function jttl(t,j){
+				var sum = 0;
+				for(var i = 1; i <= t; i++){
+					sum = i;
+					if(sum + (t-sum)==t && 2*sum + 4*(t-sum)==j){
+						document.write("鸡有"+sum+"只"+"<br/>");
+						document.write("兔有"+(t-sum)+"只"+"<br/>");
+					}
+				}
+			}
+			
+			jttl(35,94);
+			
+			//定义一个变量保存鸡
+			// var j;
+			// for(j = 1; j<=35; j++){
+			// 	if((j+(35-j)==35) && (2*j + 4*(35-j)) == 94){
+			// 		document.write("鸡有"+j+"只"+"<br/>");
+			// 		document.write("兔有"+(35-j)+"只"+"<br/>");
+			// 	}
+			// }
+			
+			// var head = parseInt(prompt("请输入有多少头"));
+			// var footer = parseInt(prompt("请输入有多少足："));
+			// var duoZu = parseInt(prompt("请输入多足："));
+			// var shaoZu = parseInt(prompt("请输入少足："));
+			
+			// var da = head * duoZu;
+			// var syz = da - footer;
+			// var zu = duoZu - shaoZu;
+			// var ji = syz / zu;
+			// var tuzi = head - ji;
+			
+			// document.write("鸡有"+ji+"只"+"<br/>");
+			// document.write("兔有"+tuzi+"只"+"<br/>")
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

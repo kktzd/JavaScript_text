@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			//简易计算机函数
+			function Add(z1,z2,fu){
+				var sum = 0;
+				if(isNaN(z1)){
+					alert("您的第一个操作符有问题");
+				}else if(isNaN(z2)){
+					alert("您的第二个操作符有问题")
+				}
+				else if(fu == "+"){
+					sum = z1 + z2;
+					return z1 + fu + z2 + "=" + sum;
+				}else if(fu == "-"){
+					sum = z1 - z2;
+					return z1 + fu + z2 + "=" + sum;
+				}else if(fu == "*"){
+					sum = z1 * z2;
+					return z1 + fu + z2 + "=" + sum;
+				}else if(fu == "/"){
+					sum = z1 / z2;
+					return z1 + fu + z2 + "=" + sum;
+				}else{
+					alert("你输入的运算符有问题。")
+				}
+			}
+			
+			function Get(){
+				var a = parseFloat(prompt("请输入第一个操作数："));
+				var b = parseFloat(prompt("请输入第二个操作数："));
+				var c = prompt("请输入运算符：");
+				alert(Add(a,b,c));
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点击计算" onclick="Get()">
+	</body>
+</html>
+<!-- // function Add(x,z,y){
+			// 	switch (z){
+			// 		case('+'):
+			// 			var j = x + y;
+			// 			return x+"+"+y+"="+j;
+			// 			break;
+			// 		case('-'):
+			// 			var j = x - y;
+			// 			return x +"-"+y+"="+j;
+			// 			break;
+			// 		case('*'):
+			// 			var j = x * y;
+			// 			return x +"*"+y+"="+j;
+			// 			break;
+			// 		case('/'):
+			// 			var j = x / y;
+			// 			return x+"/"+y+"="+j;
+			// 			break;
+			// 		default:
+			// 		  return "输入错误";
+			// 		  break;
+			// 	}
+			// } -->

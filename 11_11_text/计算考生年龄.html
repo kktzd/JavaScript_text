@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function Kaosheng(n){
+				//判断考生人数
+				if(n<=0 || isNaN(n)){
+					alert("输入错误，请重新输入。");
+					Kaosheng(parseInt(prompt("请输入有多少考生:")));
+				}else if(n>0 && !isNaN(n)){
+					var sum = 0;
+					var sum2 = 0;
+					for(var i = 1; i<=n; i++){
+						var a = parseInt(prompt("请输入第"+i+"位"+"考生的年龄："));
+						while(a<17 || a>90 || isNaN(a)){
+							alert("你输入的有问题，请重新输入：");
+							a = parseInt(prompt("第"+i+"位考试的年龄："));
+						}
+						document.write("第"+i+"位考生的年龄为："+a+"<br/>");
+						if(a>=17 && a<=25){
+							sum++;
+						}
+						if(a>25){
+							sum2++;
+						}
+					}
+					var sum1 = (sum / n)*100;
+					document.write("青少年考生比率为："+parseInt(sum1)+"%"+"<br/>");
+					var sum3 = (sum2 / n)*100;
+					document.write("中老年考生比率为："+parseInt(sum3)+"%"+"<br/>");
+				}
+			}
+			
+			Kaosheng(parseInt(prompt("请输入有多少考生：")));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

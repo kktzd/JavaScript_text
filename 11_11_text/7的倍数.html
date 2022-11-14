@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function multiple(n) {
+				var sum = 0;
+				for (var i = 1; i < n; i++) {
+					if (i % 7 == 0) {
+						sum += i;
+						document.write(i + "&nbsp");
+					}
+				}
+				document.write("<br>" + n + "以内7的倍数为：" + sum);
+			}
+
+			multiple(100);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function tiqi(a){
+				if(a<1 || a>12){
+					return "你的输入有误";
+				}else if(a>=1 && a<=3){
+					return "春有百花";
+				}else if(a>=4 && a<=6){
+					return "夏有凉风";
+				}else if(a>=7 && a<=9){
+					return "秋有月";
+				}else if(a>=10 && a<=12){
+					return "冬有雪";
+				}
+			}
+			
+			//调用1
+			document.write(tiqi(2));
+			alert(tiqi(2));
+			
+			//调用2
+			var a = 12;
+			document.write(tiqi(a));
+			alert(tiqi(a));
+			
+			//调用3
+			alert(tiqi(prompt("请输入月份：")));
+			document.write(tiqi(prompt("请输入月份：")));
+			
+			// function Yue(s){
+			// 	switch(s){
+			// 		case 1:
+			// 		case 2:
+			// 		case 3:
+			// 			alert("春有百花");
+			// 			break;
+			// 	case 4:
+			// 	case 5:
+			// 	case 6:
+			// 		alert("夏有凉风");
+			// 		break;
+			// 	case 7:
+			// 	case 8:
+			// 	case 9:
+			// 		alert("秋有月");
+			// 		break;
+			// 	case 10:
+			// 	case 11:
+			// 	case 12:
+			// 		alert("冬有雪");
+			// 		break;
+			// 	 default:
+			// 	   alert("输入错误");
+			// 	   break;
+			// 	}
+			// }
+			
+			// var x = Yue(parseInt(prompt("请输入月份：")));
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

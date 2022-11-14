@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function averagen(n){
+				if(isNaN(n)){
+					alert("输入有误");
+				}else{
+					var sum = 0;
+					for(var i = 1; i<=n; i++){
+						var a = parseInt(prompt("第"+i+"位同学的睡眠时间："));
+						while(isNaN(a)){
+							alert("你输入的有问题，请重新输入：");
+							a = parseInt(prompt("第"+i+"位同学的睡眠时间："));
+						}
+						document.write("第"+i+"位同学的睡眠时间为："+a+"<br/>");
+						sum += a;
+					}
+					var pJun = sum/n;
+					document.write(n+"位同学的平均睡眠时间为："+parseInt(pJun));
+				}
+			}
+			
+			averagen(parseInt(prompt("请输入需要计算几位同学的睡眠时间：")));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
