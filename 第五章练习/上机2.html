@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>统计字符串中有多个数字</title>
+		<script>
+			function Sum(n) {
+				var sum = 0;
+				for (var i = 0; i < n.length; i++){
+					var char = n.charAt(i);
+					if(!isNaN(char)){
+						sum++;
+					}
+				}
+				return sum;
+			}
+			
+			document.write(Sum("1d3sdsg"));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
