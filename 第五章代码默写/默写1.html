@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			//空内容""
+			function Get(n) {
+				if (n == null || n == "") {
+					alert("内容不能为空");
+				} else {
+					var weight = n.length;
+					var daxie = n.toUpperCase();
+					alert(daxie + "的长度是" + weight);
+				}
+			}
+
+			function Butn() {
+				var anniu = prompt("请输入内容：");
+				Get(anniu);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="判断按钮" onclick="Butn()">
+	</body>
+</html>
