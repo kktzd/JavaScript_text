@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>5.5</title>
+		<script>
+			//找出字符串中小于某个字符的所有字符
+			var str = "how are you doing？";
+			//定义一个空字符，用来保存字符
+			var a = "";
+			for (var i = 0; i < str.length; i++) {
+				if(str[i] < 's'){
+					a += str[i]+"、";
+				}
+			}
+			document.write(a);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
