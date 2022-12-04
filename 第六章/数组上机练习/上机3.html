@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function Shuiguo(n) {
+				var arr = [];
+				for (var i = 0; i < n; i++) {
+					var a = prompt("请输入内容");
+					arr.push(a);
+				}
+
+				document.write("数组中的5句话为：<br/>")
+				for (var i = 0; i < arr.length; i++) {
+					document.write(arr[i] + "<br/>");
+				}
+
+				document.write("数组中的5句话倒序输出为：<br/>")
+				var arr1 = arr.reverse();
+				for (var i = 0; i < arr1.length; i++) {
+					document.write(arr[i] + "<br/>");
+				}
+
+			}
+
+			Shuiguo(5);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

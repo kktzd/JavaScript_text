@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var arr = [];
+			var sum = 0;
+			document.write("五个同学的成绩分别为：<br/>");
+			for (var i = 0; i < 5; i++) {
+				arr[i] = prompt("请输入成绩：");
+				sum += parseFloat(arr[i]);
+			}
+			for (var i = 0; i < arr.length; i++) {
+				document.write(arr[i] + "<br>")
+			}
+			sum = sum / 5;
+			document.write("五个同学的平均成绩为：" + sum)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

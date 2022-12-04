@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var arr = [];
+			var arr1 = [];
+			document.write("五家店铺的价格分别为：<br/>");
+			for (var i = 0; i < 5; i++) {
+				arr[i] = prompt("请输入价格：");
+			}
+			for (var i = 0; i < arr.length; i++) {
+				document.write(arr[i] + "<br>")
+			}
+			arr1 = arr.sort(function(a, b) {
+				return a - b
+			});
+			document.write("五家店铺最低价格为：" + arr1[0])
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

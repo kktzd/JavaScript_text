@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var arr = [];
+			var sum = 0;
+			document.write("10个数字为：<br/>");
+			for (var i = 0; i < 10; i++) {
+				arr[i] = prompt("请输入数字：");
+				document.write(arr[i] + "<br/>");
+				if (arr[i] % 2 == 0) {
+					sum += parseFloat(arr[i]);
+				}
+			}
+			document.write("10个数字的偶数和为：" + sum);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

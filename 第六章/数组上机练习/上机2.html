@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function Shuiguo(n) {
+				var kge = "&nbsp&nbsp&nbsp&nbsp&nbsp";
+				document.write("序号" + kge + "金额" + "<br/>");
+				var arr = [];
+				for (var i = 0; i < n; i++) {
+					var a = prompt("请输入金额：");
+					arr.push(a);
+					arr.sort(function(a, b) {
+						return b - a;
+					});
+				}
+
+				for (var i = 0; i < arr.length; i++) {
+					document.write((i + 1) + kge + kge + arr[i] + "<br/>");
+				}
+			}
+
+			Shuiguo(4)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

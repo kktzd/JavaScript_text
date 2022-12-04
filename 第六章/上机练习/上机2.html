@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function Size(width, height, depth) {
+				var mianJi = width * height;
+				var tiJi = width * height * depth;
+				var sizes = [mianJi, tiJi];
+				return sizes;
+			}
+
+			var arr = Size(30, 40, 10);
+			document.write("底部面积为" + arr[0] + "<br/>");
+			document.write("体积为" + arr[1]);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
