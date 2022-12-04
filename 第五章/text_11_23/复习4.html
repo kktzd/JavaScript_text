@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var name = prompt("请输入姓名全拼,并用空格隔开");
+			document.write("原姓名拼音为：" + name + "<br/>");
+			var tmp = "";
+
+			var str = name.toUpperCase();
+			str = str.split(" ");
+			for (var i = 0; i < str.length; i++) {
+				str[i] = str[i].substring(0, 1) + str[i].substring(1).toLowerCase();
+			}
+			tmp += str;
+			tmp = tmp.replace(/,/g,"");
+			document.write("转换后的姓名拼音为：" + tmp);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

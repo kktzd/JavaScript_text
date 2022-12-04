@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function Cat(hua, zfu) {
+				var sum = 0;
+				for (var i = 0; i < hua.length; i++) {
+					if (hua.charAt(i) == zfu) {
+						sum++;
+					}
+				}
+				document.write("这句话中共有" + sum + "个单词包含" + "&nbsp;\"" + zfu + "\"&nbsp;" + "字");
+			}
+
+			function Sr() {
+				var hua = prompt("请输入一句话：");
+				document.write("话语为：" + hua + "<br/>");
+				var zfu = prompt("请输入要查找的字符：");
+				Cat(hua, zfu);
+			}
+
+			Sr();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

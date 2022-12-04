@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function Youxian(n) {
+				if (n == "" || n == null) {
+					alert('邮箱地址错误，必须含义"@"和"."符号且不能为空');
+				} else if (n.indexOf("@") == -1 || n.indexOf(".") == -1){
+					alert('邮箱地址错误，必须含义"@"和"."符号且不能为空');
+				}else if(n.indexOf("@") != -1 && n.indexOf(".") != -1){
+					alert("邮箱地址正确，邮箱名称是："+n.substring(0,n.indexOf("@")));
+				}
+			}
+
+			Youxian(prompt("请输入一个正确的邮箱地址："));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

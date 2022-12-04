@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var sfz = prompt("请输入身份证号：");
+			if (sfz.length == 18) {
+				document.write("身份证号为：" + sfz + "<br/>");
+				var Year = sfz.substring(6, 10);
+				var yue = sfz.substring(10, 12);
+				var day = sfz.substring(12, 14);
+				document.write("您的生日为：" + Year + "年" + yue + "月" + day + "日" + "<br/>");
+			} else {
+				alert("请输入18位的身份证号");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

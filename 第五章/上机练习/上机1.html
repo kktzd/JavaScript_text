@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>统计某一个字符的个数</title>
+		<script>
+			function char(n){
+				var str = "Can you can a can as a Canner can can a can";
+				var sum = 0;
+				for(var i = 0;i<=str.length;i++){
+					if(str.charAt(i) == n){
+						sum++;
+					}
+				}
+				document.write("字符串中含有"+sum+"个字符"+n);
+			}
+			
+			char(prompt("请输入一个字符："));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function Chazhao(n) {
+				var sum = 0;
+				var str = "";
+				var fge = 0;
+				for (var i = 1; i <= 5; i++) {
+					var a = prompt("请输入第" + i + "种颜色：");
+					if (a.indexOf(n) != -1) {
+						sum++;
+					}
+					str += a + ",";
+				}
+
+				document.write("字符为" + n + "<br/>");
+				fge = str.split(",");
+				for (var i = 0; i < fge.length - 1; i++) {
+					document.write("第" + (i + 1) + "种颜色：" + fge[i] + "<br/>");
+				}
+				document.write("共有" + sum + "个单词包含" + n + "字符");
+			}
+
+			Chazhao(prompt("请输入要查找的字符："));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

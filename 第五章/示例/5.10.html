@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>5.10</title>
+		<script>
+			//分割字符串
+			//第一种方法
+			var str1 = "HTML,CSS,Javascript";
+			var arr = str1.split(",");
+			document.write("数组第1个元素是："+arr[0]+"<br/>");
+			document.write("数组第2个元素是："+arr[1]+"<br/>");
+			document.write("数组第3个元素是："+arr[2]+"<br/>");
+			//第二种方法
+			var str1 = "HTML,CSS,Javascript";
+			var arr = str1.split(",");
+			for (var i = 0; i < arr.length; i++) {
+				document.write("数组第" + (i+1) + "个元素是" + arr[i] + "<br/>");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var tmp = prompt("请输入字符串：");
+			document.write("字符串为：" + tmp + "<br/>");
+			var sum = 0;
+			var str = 0;
+			var num = 0;
+			tmp = tmp.toLowerCase();
+			for (var i = 0; i < tmp.length; i++) {
+				if (!isNaN(tmp[i])) {
+					sum++;
+				} else if (tmp[i] >= "a" && tmp <= "s") {
+					str++;
+				} else if (tmp[i] < "a" || tmp[i] > "s") {
+					num++;
+				}
+			}
+			document.write("数字的个数为：" + sum + "<br/>" + "字母的个数为：" + str + "<br/>" + "其他字符的个数为：" + num);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
